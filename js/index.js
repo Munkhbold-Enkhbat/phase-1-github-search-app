@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const search = document.querySelector('#github-form')
-  const toggleBtn = document.createElement('button') 
-  toggleBtn.id = 'toggle-button' 
-  toggleBtn.innerText = 'user/repos'
   
-
-  search.appendChild(toggleBtn)
+  // createToggleBtn()
   search.addEventListener('submit', (e) => {
     e.preventDefault()
     clearPreviousResults()
@@ -72,3 +68,22 @@ function addTitle(name) {
   h2.textContent = `${name}'s Repos`
   document.querySelector('#repos-list').appendChild(h2)
 }
+
+// function createToggleBtn() {
+//   const toggleBtn = document.createElement('button') 
+//   toggleBtn.id = 'toggle-button' 
+//   toggleBtn.innerText = 'user/repos'
+  
+//   let currentInputStatus = 'userSearch'
+
+//   toggleBtn.addEventListener('click', () => {
+//     if(currentInputStatus === 'userSearch') {
+//       currentInputStatus = 'repoSearch'      
+//     } else {
+//       currentInputStatus = 'userSearch'
+//     }
+//     console.log(currentInputStatus);
+//   })
+//   const search = document.querySelector('#github-form')
+//   search.appendChild(toggleBtn)
+// }
