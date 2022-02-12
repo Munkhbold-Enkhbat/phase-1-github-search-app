@@ -15,15 +15,56 @@ ul {
 .card {
   text-align: 'center';
   border: grey solid 1px;
-  width: 15rem;
+  width: 20rem;
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #e04b52;
 }
 
+p {
+  padding-bottom: 13px;
+}
+
 img {
   justify-self: center;
   height: 12rem;
   width: auto;
+}
+
+.repos-btn {
+  position: relative;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  height: 2rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 15px;
+  justify-self: center;  
+}
+
+.repos-btn:hover {
+  background-color: #FBCAFF;
+  border:#e04b52 solid 1px;
+  color: whitesmoke;
+}
+
+.repo {
+  font-size: 18px;
+  color: blue;
+}
+
+#user-list {
+  position: relative;
+  float: left;
+  width: 65%;
+}
+
+#repos-list {
+  padding-top: 5rem;
+  float: left;
+  padding: auto;
+  position: relative;
+  text-align: 'center';
 }
